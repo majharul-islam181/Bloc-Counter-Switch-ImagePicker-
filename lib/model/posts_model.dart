@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 class PostModel {
   int? postId;
   int? id;
@@ -5,7 +6,13 @@ class PostModel {
   String? email;
   String? body;
 
-  PostModel({this.postId, this.id, this.name, this.email, this.body, required int userId});
+  PostModel(
+      {this.postId,
+      this.id,
+      this.name,
+      this.email,
+      this.body,
+      required int userId});
 
   PostModel.fromJson(Map<String, dynamic> json) {
     postId = json['postId'];
@@ -16,12 +23,12 @@ class PostModel {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['postId'] = this.postId;
-    data['id'] = this.id;
-    data['name'] = this.name;
-    data['email'] = this.email;
-    data['body'] = this.body;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['postId'] = postId;
+    data['id'] = id;
+    data['name'] = name;
+    data['email'] = email;
+    data['body'] = body;
     return data;
   }
 }

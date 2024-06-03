@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_practise/bloc/counter/counter_bloc.dart';
 import 'package:flutter_bloc_practise/bloc/favourite_app/favourite_bloc.dart';
 import 'package:flutter_bloc_practise/bloc/image_picker/image_picker_bloc.dart';
-import 'package:flutter_bloc_practise/bloc/posts/posts_bloc.dart';
+import 'package:flutter_bloc_practise/bloc/posts_GET_api_Searching/posts_bloc.dart';
 import 'package:flutter_bloc_practise/bloc/switch/switch_bloc.dart';
 import 'package:flutter_bloc_practise/bloc/todo/todo_bloc.dart';
 import 'package:flutter_bloc_practise/ui/Image_picker/image_picker_screen.dart';
