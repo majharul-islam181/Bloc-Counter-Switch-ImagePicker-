@@ -8,6 +8,7 @@ import 'package:flutter_bloc_practise/bloc/switch/switch_bloc.dart';
 import 'package:flutter_bloc_practise/bloc/todo/todo_bloc.dart';
 import 'package:flutter_bloc_practise/ui/Image_picker/image_picker_screen.dart';
 import 'package:flutter_bloc_practise/ui/favorite_app/favourite_app_screen.dart';
+import 'package:flutter_bloc_practise/ui/login/login_screen.dart';
 import 'package:flutter_bloc_practise/ui/posts/posts_screens.dart';
 // import 'package:flutter_bloc_practise/ui/counter_screen.dart';
 import 'package:flutter_bloc_practise/ui/switch_example/switch_screen.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (_) => PostsBloc()),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -45,7 +47,8 @@ class MyApp extends StatelessWidget {
         // home: const ImagePickerScreen(),
         // home: const TodoScreen(),
         // home: const FavouriteAppScreen(),
-        home: const PostsScreens(),
+        // home: const PostsScreens(),
+        home: const LoginScreen(),
       ),
     );
   }
